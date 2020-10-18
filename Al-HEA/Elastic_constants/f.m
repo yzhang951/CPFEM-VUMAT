@@ -1,0 +1,39 @@
+function y = f(x)
+FCC_C11 = x(1);FCC_C12 = x(2);FCC_C44 = x(3);
+BCC_C11 = x(4);BCC_C12 = x(5);BCC_C44 = x(6);
+K = x(7); G = x(8);
+
+[a_FCC b_FCC c_FCC] = Uijkl(FCC_C11,FCC_C12,FCC_C44,K,G);
+[a_BCC b_BCC c_BCC] = Uijkl(BCC_C11,BCC_C12,BCC_C44,K,G);
+
+K_FCC = 1/9/a_FCC;
+G_FCC = 5/(2*b_FCC+3*c_FCC)/4;
+K_BCC = 1/9/a_BCC;
+G_BCC = 5/(2*b_BCC+3*c_BCC)/4;
+
+y = zeros(1,21);
+y(1)  = DEC_LD(FCC_C11,FCC_C12,FCC_C44,K,G,[2 0 0]);
+y(2)  = DEC_LD(FCC_C11,FCC_C12,FCC_C44,K,G,[2 2 0]);
+y(3)  = DEC_LD(FCC_C11,FCC_C12,FCC_C44,K,G,[1 1 1]);
+y(4)  = DEC_LD(FCC_C11,FCC_C12,FCC_C44,K,G,[3 1 1]);
+y(5)  = DEC_LD(FCC_C11,FCC_C12,FCC_C44,K,G,[3 3 1]);
+
+y(6)  = DEC_TD(FCC_C11,FCC_C12,FCC_C44,K,G,[2 0 0]);
+y(7)  = DEC_TD(FCC_C11,FCC_C12,FCC_C44,K,G,[2 2 0]);
+y(8)  = DEC_TD(FCC_C11,FCC_C12,FCC_C44,K,G,[1 1 1]);
+y(9)  = DEC_TD(FCC_C11,FCC_C12,FCC_C44,K,G,[3 1 1]);
+y(10) = DEC_TD(FCC_C11,FCC_C12,FCC_C44,K,G,[3 3 1]);
+
+y(11) = DEC_LD(BCC_C11,BCC_C12,BCC_C44,K,G,[2 0 0]);
+y(12) = DEC_LD(BCC_C11,BCC_C12,BCC_C44,K,G,[1 1 0]);
+y(13) = DEC_LD(BCC_C11,BCC_C12,BCC_C44,K,G,[2 1 1]);
+y(14) = DEC_LD(BCC_C11,BCC_C12,BCC_C44,K,G,[3 2 1]);
+
+y(15) = DEC_TD(BCC_C11,BCC_C12,BCC_C44,K,G,[2 0 0]);
+y(16) = DEC_TD(BCC_C11,BCC_C12,BCC_C44,K,G,[1 1 0]);
+y(17) = DEC_TD(BCC_C11,BCC_C12,BCC_C44,K,G,[2 1 1]);
+y(18) = DEC_TD(BCC_C11,BCC_C12,BCC_C44,K,G,[3 2 1]);
+
+y(19) = K - (0.67*K_FCC+0.33*K_BCC);
+y(20) = G - (0.67*G_FCC+0.33*G_BCC);
+y(21) = 9*K*G/(3*K+G);
