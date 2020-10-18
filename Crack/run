@@ -1,0 +1,3 @@
+#!/bin/bash
+date
+/opt/Commands/abq6131 input=j2394.inp job=j2394 user=VUMAT_poly.f cpus=16  double
