@@ -1,5 +1,5 @@
-# Crystal Plasticity Finite Elmenet (CPFE) model for 316L stainless steel
-Ubuntu operating system 16.04
+# Crystal Plasticity Finite Elmenet (CPFE) model for AM-HEA
+Ubuntu operating system 18.04
 Abaqus 6.13
 
 ## Input code
