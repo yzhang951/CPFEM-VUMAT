@@ -1,0 +1,56 @@
+Abaqus JOB J_8000
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens.
+<1544 out of 2031 licenses remain available>.
+Begin Compiling Double Precision Abaqus/Explicit User Subroutines
+Wed May 26 18:12:30 2021
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+ Intel(R) Fortran 15.0-1750
+End Compiling Double Precision Abaqus/Explicit User Subroutines
+Begin Linking Double Precision Abaqus/Explicit User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+ifort: command line remark #10148: option '-i-dynamic' not supported
+
+GNU ld (GNU Binutils for Ubuntu) 2.30
+End Linking Double Precision Abaqus/Explicit User Subroutines
+Wed May 26 18:12:33 2021
+Begin Compiling Single Precision Abaqus/Package User Subroutines
+Wed May 26 18:12:33 2021
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+ Intel(R) Fortran 15.0-1750
+End Compiling Single Precision Abaqus/Package User Subroutines
+Begin Linking Single Precision Abaqus/Package User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+ifort: command line remark #10148: option '-i-dynamic' not supported
+
+GNU ld (GNU Binutils for Ubuntu) 2.30
+End Linking Single Precision Abaqus/Package User Subroutines
+Wed May 26 18:12:36 2021
+Begin Analysis Input File Processor
+Wed May 26 18:12:36 2021
+Run pre
+Wed May 26 18:12:38 2021
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+Wed May 26 18:12:38 2021
+Run package
+Wed May 26 18:14:32 2021
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+Wed May 26 18:14:32 2021
+Run explicit_dp
+Wed May 26 20:16:25 2021
+End Abaqus/Explicit Analysis
+Begin Selected Results Translator
+Wed May 26 20:16:25 2021
+Run select
+Wed May 26 20:16:25 2021
+End Selected Results Translator
+Abaqus JOB J_8000 COMPLETED

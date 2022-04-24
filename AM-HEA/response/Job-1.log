@@ -1,0 +1,59 @@
+Abaqus JOB Job-1
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens.
+<1462 out of 1631 licenses remain available>.
+Begin Compiling Double Precision Abaqus/Explicit User Subroutines
+Tue Dec 14 19:01:06 2021
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+ Intel(R) Fortran 15.0-1750
+End Compiling Double Precision Abaqus/Explicit User Subroutines
+Begin Linking Double Precision Abaqus/Explicit User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+ifort: command line remark #10148: option '-i-dynamic' not supported
+
+GNU ld (GNU Binutils for Ubuntu) 2.30
+End Linking Double Precision Abaqus/Explicit User Subroutines
+Tue Dec 14 19:01:11 2021
+Begin Compiling Single Precision Abaqus/Package User Subroutines
+Tue Dec 14 19:01:11 2021
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+ Intel(R) Fortran 15.0-1750
+End Compiling Single Precision Abaqus/Package User Subroutines
+Begin Linking Single Precision Abaqus/Package User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.1.133 Build 20141023
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+ifort: command line remark #10148: option '-i-dynamic' not supported
+
+GNU ld (GNU Binutils for Ubuntu) 2.30
+End Linking Single Precision Abaqus/Package User Subroutines
+Tue Dec 14 19:01:15 2021
+Begin Analysis Input File Processor
+Tue Dec 14 19:01:15 2021
+Run pre
+Tue Dec 14 19:01:16 2021
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+Tue Dec 14 19:01:16 2021
+Run package
+Tue Dec 14 19:01:19 2021
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+Tue Dec 14 19:01:19 2021
+Run explicit_dp
+Tue Dec 14 20:03:19 2021
+Abaqus Error: The executable explicit_dp
+aborted with system error code 15.
+Please check the .dat, .msg, and .sta files for error messages if the files
+exist.  If there are no error messages and you cannot resolve the problem,
+please run the command "abaqus job=support information=support" to report and
+save your system information.  Use the same command to run Abaqus that you
+used when the problem occurred.  Please contact your local Abaqus support
+office and send them the input file, the file support.log which you just
+created, the executable name, and the error code.
+Abaqus/Analysis exited with errors

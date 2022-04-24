@@ -1,0 +1,1793 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.13-1 replay file
+# Internal Version: 2013_05_15-19.56.28 126354
+# Run by yzhang951 on Tue Dec 14 17:30:36 2021
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=260.085388183594, 
+    height=201.259262084961)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+o1 = session.openOdb(name='/home/yzhang951/AlHEA/response/Job-1.odb')
+session.viewports['Viewport: 1'].setValues(displayedObject=o1)
+#: Model: /home/yzhang951/AlHEA/response/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     1
+#: Number of Meshes:             1
+#: Number of Element Sets:       9
+#: Number of Node Sets:          8
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=2)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=3)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=3)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=3)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=2)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=3)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=4)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=4)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=4)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=2)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=4)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=5)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=5)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S11'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S22'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S11'), )
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_UNDEF, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=6)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=6)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=5)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=6)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=7)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=6)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=7)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=5)
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    visibleEdges=FEATURE)
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    visibleEdges=EXTERIOR)
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    visibleEdges=FREE)
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    contourStyle=CONTINUOUS, maxValue=6.83887E+08, minValue=3.35254E+08)
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    contourType=QUILT, contourStyle=DISCRETE)
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    contourType=BANDED)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=9)
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    numIntervals=24, maxValue=1.2317E+09, minValue=6.01755E+08)
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    contourStyle=CONTINUOUS)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=9)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=9)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 1 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 2 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 3 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 4 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 5 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 6 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 7 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 8 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 9 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 10 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 11 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 12 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 13 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 14 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 15 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 16 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 17 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 18 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 19 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 20 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 21 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 22 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 23 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 24 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 25 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 26 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 27 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 28 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 29 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 30 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 31 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 32 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 33 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 34 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 35 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 36 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 37 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 38 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 39 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 40 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 41 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 42 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c42 = session.Curve(xyData=xy42)
+xy43 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 43 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c43 = session.Curve(xyData=xy43)
+xy44 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 44 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c44 = session.Curve(xyData=xy44)
+xy45 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 45 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c45 = session.Curve(xyData=xy45)
+xy46 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c46 = session.Curve(xyData=xy46)
+xy47 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c47 = session.Curve(xyData=xy47)
+xy48 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c48 = session.Curve(xyData=xy48)
+xy49 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c49 = session.Curve(xyData=xy49)
+xy50 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c50 = session.Curve(xyData=xy50)
+xy51 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c51 = session.Curve(xyData=xy51)
+xy52 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c52 = session.Curve(xyData=xy52)
+xy53 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c53 = session.Curve(xyData=xy53)
+xy54 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c54 = session.Curve(xyData=xy54)
+xy55 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c55 = session.Curve(xyData=xy55)
+xy56 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c56 = session.Curve(xyData=xy56)
+xy57 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c57 = session.Curve(xyData=xy57)
+xy58 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c58 = session.Curve(xyData=xy58)
+xy59 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c59 = session.Curve(xyData=xy59)
+xy60 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c60 = session.Curve(xyData=xy60)
+xy61 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c61 = session.Curve(xyData=xy61)
+xy62 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c62 = session.Curve(xyData=xy62)
+xy63 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c63 = session.Curve(xyData=xy63)
+xy64 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 64 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c64 = session.Curve(xyData=xy64)
+xy65 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 65 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c65 = session.Curve(xyData=xy65)
+xy66 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 66 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c66 = session.Curve(xyData=xy66)
+xy67 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 67 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c67 = session.Curve(xyData=xy67)
+xy68 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 68 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c68 = session.Curve(xyData=xy68)
+xy69 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 69 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c69 = session.Curve(xyData=xy69)
+xy70 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 70 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c70 = session.Curve(xyData=xy70)
+xy71 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 71 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c71 = session.Curve(xyData=xy71)
+xy72 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 72 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c72 = session.Curve(xyData=xy72)
+xy73 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 73 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c73 = session.Curve(xyData=xy73)
+xy74 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 74 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c74 = session.Curve(xyData=xy74)
+xy75 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 75 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c75 = session.Curve(xyData=xy75)
+xy76 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 76 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c76 = session.Curve(xyData=xy76)
+xy77 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 77 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c77 = session.Curve(xyData=xy77)
+xy78 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 78 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c78 = session.Curve(xyData=xy78)
+xy79 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 79 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c79 = session.Curve(xyData=xy79)
+xy80 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 80 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c80 = session.Curve(xyData=xy80)
+xy81 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 81 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c81 = session.Curve(xyData=xy81)
+xy82 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c82 = session.Curve(xyData=xy82)
+xy83 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c83 = session.Curve(xyData=xy83)
+xy84 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c84 = session.Curve(xyData=xy84)
+xy85 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c85 = session.Curve(xyData=xy85)
+xy86 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c86 = session.Curve(xyData=xy86)
+xy87 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c87 = session.Curve(xyData=xy87)
+xy88 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c88 = session.Curve(xyData=xy88)
+xy89 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c89 = session.Curve(xyData=xy89)
+xy90 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c90 = session.Curve(xyData=xy90)
+xy91 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c91 = session.Curve(xyData=xy91)
+xy92 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c92 = session.Curve(xyData=xy92)
+xy93 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c93 = session.Curve(xyData=xy93)
+xy94 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c94 = session.Curve(xyData=xy94)
+xy95 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c95 = session.Curve(xyData=xy95)
+xy96 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c96 = session.Curve(xyData=xy96)
+xy97 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c97 = session.Curve(xyData=xy97)
+xy98 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c98 = session.Curve(xyData=xy98)
+xy99 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c99 = session.Curve(xyData=xy99)
+xy100 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c100 = session.Curve(xyData=xy100)
+xy101 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c101 = session.Curve(xyData=xy101)
+xy102 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c102 = session.Curve(xyData=xy102)
+xy103 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c103 = session.Curve(xyData=xy103)
+xy104 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c104 = session.Curve(xyData=xy104)
+xy105 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c105 = session.Curve(xyData=xy105)
+xy106 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 106 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c106 = session.Curve(xyData=xy106)
+xy107 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 107 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c107 = session.Curve(xyData=xy107)
+xy108 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 108 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c108 = session.Curve(xyData=xy108)
+xy109 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 109 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c109 = session.Curve(xyData=xy109)
+xy110 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 110 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c110 = session.Curve(xyData=xy110)
+xy111 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 111 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c111 = session.Curve(xyData=xy111)
+xy112 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 112 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c112 = session.Curve(xyData=xy112)
+xy113 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 113 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c113 = session.Curve(xyData=xy113)
+xy114 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 114 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c114 = session.Curve(xyData=xy114)
+xy115 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 115 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c115 = session.Curve(xyData=xy115)
+xy116 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 116 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c116 = session.Curve(xyData=xy116)
+xy117 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 117 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c117 = session.Curve(xyData=xy117)
+xy118 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 118 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c118 = session.Curve(xyData=xy118)
+xy119 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 119 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c119 = session.Curve(xyData=xy119)
+xy120 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 120 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c120 = session.Curve(xyData=xy120)
+xy121 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 121 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c121 = session.Curve(xyData=xy121)
+xy122 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 122 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c122 = session.Curve(xyData=xy122)
+xy123 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 123 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c123 = session.Curve(xyData=xy123)
+xy124 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 124 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c124 = session.Curve(xyData=xy124)
+xy125 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 125 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c125 = session.Curve(xyData=xy125)
+xy126 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 126 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c126 = session.Curve(xyData=xy126)
+xy127 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 127 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c127 = session.Curve(xyData=xy127)
+xy128 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 128 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c128 = session.Curve(xyData=xy128)
+xy129 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 129 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c129 = session.Curve(xyData=xy129)
+xy130 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 130 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c130 = session.Curve(xyData=xy130)
+xy131 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 131 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c131 = session.Curve(xyData=xy131)
+xy132 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 132 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c132 = session.Curve(xyData=xy132)
+xy133 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 133 Int Point 1 in ELSET SET-FCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c133 = session.Curve(xyData=xy133)
+xyp = session.XYPlot('XYPlot-1')
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, c43, c44, c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c55, c56, 
+    c57, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67, c68, c69, c70, c71, 
+    c72, c73, c74, c75, c76, c77, c78, c79, c80, c81, c82, c83, c84, c85, c86, 
+    c87, c88, c89, c90, c91, c92, c93, c94, c95, c96, c97, c98, c99, c100, 
+    c101, c102, c103, c104, c105, c106, c107, c108, c109, c110, c111, c112, 
+    c113, c114, c115, c116, c117, c118, c119, c120, c121, c122, c123, c124, 
+    c125, c126, c127, c128, c129, c130, c131, c132, c133, ), )
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=10)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=14)
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 46 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 47 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 48 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 49 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 50 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 51 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 52 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 53 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 54 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 55 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 56 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 57 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 58 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 59 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 60 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 61 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 62 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 63 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c18 = session.Curve(xyData=xy18)
+xy19 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 82 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c19 = session.Curve(xyData=xy19)
+xy20 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 83 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c20 = session.Curve(xyData=xy20)
+xy21 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 84 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c21 = session.Curve(xyData=xy21)
+xy22 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 85 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c22 = session.Curve(xyData=xy22)
+xy23 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 86 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c23 = session.Curve(xyData=xy23)
+xy24 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 87 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c24 = session.Curve(xyData=xy24)
+xy25 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 88 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c25 = session.Curve(xyData=xy25)
+xy26 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 89 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c26 = session.Curve(xyData=xy26)
+xy27 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 90 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c27 = session.Curve(xyData=xy27)
+xy28 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 91 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c28 = session.Curve(xyData=xy28)
+xy29 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 92 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c29 = session.Curve(xyData=xy29)
+xy30 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 93 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c30 = session.Curve(xyData=xy30)
+xy31 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 94 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c31 = session.Curve(xyData=xy31)
+xy32 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 95 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c32 = session.Curve(xyData=xy32)
+xy33 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 96 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c33 = session.Curve(xyData=xy33)
+xy34 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 97 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c34 = session.Curve(xyData=xy34)
+xy35 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 98 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c35 = session.Curve(xyData=xy35)
+xy36 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 99 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c36 = session.Curve(xyData=xy36)
+xy37 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 100 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c37 = session.Curve(xyData=xy37)
+xy38 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 101 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c38 = session.Curve(xyData=xy38)
+xy39 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 102 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c39 = session.Curve(xyData=xy39)
+xy40 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 103 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c40 = session.Curve(xyData=xy40)
+xy41 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 104 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=True)
+c41 = session.Curve(xyData=xy41)
+xy42 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Stress components: S11 at Element 105 Int Point 1 in ELSET SET-BCC', 
+    steps=('Step-1', ), suppressQuery=False)
+c42 = session.Curve(xyData=xy42)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, 
+    c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, 
+    c42, ), )
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=5)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=15)
+odb = session.odbs['/home/yzhang951/AlHEA/response/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.contourOptions.setValues(
+    contourStyle=DISCRETE, numIntervals=12, maxValue=1.68572E+09, 
+    minValue=9.11949E+08)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    visibleEdges=EXTERIOR)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=18)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=18)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=19)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=8)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=19)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=4)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=20)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=20)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=3)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=20)

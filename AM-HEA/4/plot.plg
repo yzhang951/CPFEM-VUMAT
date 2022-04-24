@@ -1,0 +1,12 @@
+#!/usr/bin/gnuplot -persist
+#Gnuplot script
+set		autoscale
+unset	log
+unset	label
+set		xtic auto
+set		ytic auto
+set		title "Strain-Stress Curve"
+set		xlabel "Engineering Strain (%)"
+set		ylabel "Engineering Stress (MPa)"
+set		output "SS_curve.png"
+plot    "fitting.dat"

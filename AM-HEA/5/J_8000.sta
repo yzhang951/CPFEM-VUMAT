@@ -1,0 +1,735 @@
+Abaqus/Explicit 6.13-1                           DATE 26-May-2021  TIME 18:12:39
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 1 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+  USER SUBROUTINE VUMAT
+-------------------------------------------------------------------------------
+
+
+***WARNING: A material defined in user subroutine VUMAT must be defined as
+            purely elastic (using the initial elastic modulus) at the
+            beginning of the analysis (stepTime=0). This is an informative
+            message. It does not necessarily indicate that user subroutine
+            VUMAT is incorrectly defined.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 8.00000E+09
+   Center of mass of model = ( 1.000000E+01, 1.000000E+01, 1.000000E+01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          5.360000E+11                  2.136000E+12
+      I(YY)          5.360000E+11                  2.136000E+12
+      I(ZZ)          5.360000E+11                  2.136000E+12
+      I(XY)          0.000000E+00                 -8.000000E+11
+      I(YZ)          0.000000E+00                 -8.000000E+11
+      I(ZX)          0.000000E+00                 -8.000000E+11
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 9.52809E-04
+
+   Statistics for all elements:
+      Mean = 1.09857E-03
+      Standard deviation = 7.60594E-05
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+        4038          1       9.528094E-04      1.000000E+00
+    PART-1-1
+         711          2       9.528394E-04      9.999684E-01
+    PART-1-1
+         473          3       9.528452E-04      9.999624E-01
+    PART-1-1
+        7634          4       9.528506E-04      9.999567E-01
+    PART-1-1
+        2513          5       9.529058E-04      9.998988E-01
+    PART-1-1
+        5938          6       9.529088E-04      9.998957E-01
+    PART-1-1
+         230          7       9.529173E-04      9.998868E-01
+    PART-1-1
+        2357          8       9.529663E-04      9.998353E-01
+    PART-1-1
+        5220          9       9.529810E-04      9.998199E-01
+    PART-1-1
+        1876         10       9.529991E-04      9.998009E-01
+    PART-1-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+
+Abaqus/Explicit 6.13-1                           DATE 26-May-2021  TIME 18:14:33
+
+The double precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 36.7 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 9.528E-04        4038  4.000E+04  4.000E+04
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      0 of    200 requested intervals at increment zero.
+      154  2.035E-01 2.035E-01  00:02:00 1.359E-03        6157  3.914E+05  3.976E+05
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+      743  1.001E+00 1.001E+00  00:02:23 1.345E-03         401  1.133E+06  9.061E+06
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      1 of    200 requested intervals at  1.000956E+00
+     1486  2.001E+00 2.001E+00  00:02:53 1.346E-03        5265  4.665E+05  3.582E+07
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      2 of    200 requested intervals at  2.001234E+00
+     2229  3.001E+00 3.001E+00  00:03:22 1.346E-03        2046  9.226E+05  7.845E+07
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      3 of    200 requested intervals at  3.000607E+00
+     2973  4.000E+00 4.000E+00  00:03:53 1.343E-03        7475  6.717E+05  1.359E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      4 of    200 requested intervals at  4.000064E+00
+     3719  5.001E+00 5.001E+00  00:04:23 1.341E-03        5077  6.879E+05  2.142E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      5 of    200 requested intervals at  5.000969E+00
+     4465  6.001E+00 6.001E+00  00:04:54 1.331E-03        3319  6.045E+05  3.189E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      6 of    200 requested intervals at  6.001237E+00
+     5209  7.001E+00 7.001E+00  00:05:25 1.349E-03        2331  6.147E+05  4.332E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      7 of    200 requested intervals at  7.000817E+00
+     5947  8.000E+00 8.000E+00  00:05:56 1.356E-03        5406  6.165E+05  5.461E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      8 of    200 requested intervals at  8.000260E+00
+     6690  9.000E+00 9.000E+00  00:06:26 1.330E-03        3198  6.124E+05  6.545E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number      9 of    200 requested intervals at  9.000424E+00
+     7465  1.000E+01 1.000E+01  00:06:58 1.328E-03        6715  6.101E+05  7.568E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     10 of    200 requested intervals at  1.000020E+01
+     8227  1.100E+01 1.100E+01  00:07:30 1.301E-03         859  6.101E+05  8.530E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     11 of    200 requested intervals at  1.100052E+01
+     8996  1.200E+01 1.200E+01  00:08:02 1.287E-03        7565  6.143E+05  9.448E+08
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     12 of    200 requested intervals at  1.200079E+01
+     9763  1.300E+01 1.300E+01  00:08:34 1.313E-03         385  6.128E+05  1.032E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     13 of    200 requested intervals at  1.300089E+01
+    10537  1.400E+01 1.400E+01  00:09:06 1.301E-03        1092  6.101E+05  1.116E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     14 of    200 requested intervals at  1.400036E+01
+    11318  1.500E+01 1.500E+01  00:09:39 1.258E-03        1552  6.074E+05  1.195E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     15 of    200 requested intervals at  1.500123E+01
+    12101  1.600E+01 1.600E+01  00:10:12 1.330E-03        5652  6.063E+05  1.271E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     16 of    200 requested intervals at  1.600090E+01
+    12875  1.700E+01 1.700E+01  00:10:45 1.298E-03        5652  6.059E+05  1.345E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     17 of    200 requested intervals at  1.700128E+01
+    13690  1.800E+01 1.800E+01  00:11:19 1.262E-03        6262  6.090E+05  1.416E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     18 of    200 requested intervals at  1.800061E+01
+    14488  1.900E+01 1.900E+01  00:11:52 1.290E-03         385  6.090E+05  1.485E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     19 of    200 requested intervals at  1.900044E+01
+    15258  2.000E+01 2.000E+01  00:12:24 1.311E-03        3839  6.088E+05  1.553E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     20 of    200 requested intervals at  2.000038E+01
+    16024  2.100E+01 2.100E+01  00:12:56 1.206E-03        7186  6.105E+05  1.618E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     21 of    200 requested intervals at  2.100008E+01
+    16814  2.200E+01 2.200E+01  00:13:30 1.245E-03          58  6.093E+05  1.682E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     22 of    200 requested intervals at  2.200090E+01
+    17612  2.300E+01 2.300E+01  00:14:03 1.256E-03        1152  6.100E+05  1.744E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     23 of    200 requested intervals at  2.300020E+01
+    18389  2.400E+01 2.400E+01  00:14:35 1.234E-03        1152  6.083E+05  1.805E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     24 of    200 requested intervals at  2.400014E+01
+    19177  2.500E+01 2.500E+01  00:15:08 1.324E-03         385  6.069E+05  1.865E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     25 of    200 requested intervals at  2.500052E+01
+    19950  2.600E+01 2.600E+01  00:15:41 1.324E-03         385  6.058E+05  1.925E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     26 of    200 requested intervals at  2.600122E+01
+    20729  2.700E+01 2.700E+01  00:16:13 1.304E-03        7565  6.047E+05  1.984E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     27 of    200 requested intervals at  2.700124E+01
+    21498  2.800E+01 2.800E+01  00:16:46 1.323E-03        6572  6.036E+05  2.043E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     28 of    200 requested intervals at  2.800064E+01
+    22274  2.900E+01 2.900E+01  00:17:18 1.243E-03        1152  6.036E+05  2.101E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     29 of    200 requested intervals at  2.900110E+01
+    23092  3.000E+01 3.000E+01  00:17:52 1.252E-03        7215  6.037E+05  2.159E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     30 of    200 requested intervals at  3.000095E+01
+    23907  3.100E+01 3.100E+01  00:18:26 1.216E-03        6572  6.034E+05  2.217E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     31 of    200 requested intervals at  3.100057E+01
+    24720  3.200E+01 3.200E+01  00:19:00 1.237E-03        4658  6.031E+05  2.274E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     32 of    200 requested intervals at  3.200005E+01
+    25510  3.300E+01 3.300E+01  00:19:34 1.280E-03        7565  6.027E+05  2.330E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     33 of    200 requested intervals at  3.300110E+01
+    26316  3.400E+01 3.400E+01  00:20:07 1.238E-03        7219  6.026E+05  2.387E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     34 of    200 requested intervals at  3.400062E+01
+    27098  3.500E+01 3.500E+01  00:20:40 1.303E-03        4785  6.024E+05  2.443E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     35 of    200 requested intervals at  3.500009E+01
+    27883  3.600E+01 3.600E+01  00:21:13 1.189E-03        7789  6.020E+05  2.499E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     36 of    200 requested intervals at  3.600020E+01
+    28734  3.700E+01 3.700E+01  00:21:49 1.174E-03        1092  6.019E+05  2.555E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     37 of    200 requested intervals at  3.700018E+01
+    29586  3.800E+01 3.800E+01  00:22:25 1.174E-03        1092  6.015E+05  2.610E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     38 of    200 requested intervals at  3.800046E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+    30435  3.900E+01 3.900E+01  00:23:00 1.237E-03        6701  6.012E+05  2.666E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     39 of    200 requested intervals at  3.900077E+01
+    31228  4.000E+01 4.000E+01  00:23:33 1.315E-03         222  6.015E+05  2.721E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     40 of    200 requested intervals at  4.000001E+01
+    32009  4.100E+01 4.100E+01  00:24:06 1.241E-03        5887  6.011E+05  2.776E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     41 of    200 requested intervals at  4.100090E+01
+    32805  4.200E+01 4.200E+01  00:24:40 1.260E-03         420  6.009E+05  2.831E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     42 of    200 requested intervals at  4.200090E+01
+    33599  4.300E+01 4.300E+01  00:25:13 1.251E-03         385  6.010E+05  2.886E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     43 of    200 requested intervals at  4.300098E+01
+    34395  4.400E+01 4.400E+01  00:25:47 1.242E-03        6166  6.007E+05  2.940E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     44 of    200 requested intervals at  4.400038E+01
+    35202  4.500E+01 4.500E+01  00:26:20 1.242E-03        6166  6.010E+05  2.995E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     45 of    200 requested intervals at  4.500040E+01
+    36012  4.600E+01 4.600E+01  00:26:54 1.202E-03        5491  6.005E+05  3.049E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     46 of    200 requested intervals at  4.600020E+01
+    36832  4.700E+01 4.700E+01  00:27:29 1.242E-03        4879  6.004E+05  3.103E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     47 of    200 requested intervals at  4.700113E+01
+    37640  4.800E+01 4.800E+01  00:28:03 1.241E-03        4879  5.999E+05  3.157E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     48 of    200 requested intervals at  4.800005E+01
+    38448  4.900E+01 4.900E+01  00:28:37 1.232E-03        6195  6.001E+05  3.211E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     49 of    200 requested intervals at  4.900001E+01
+    39299  5.000E+01 5.000E+01  00:29:12 1.145E-03        6037  5.999E+05  3.264E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     50 of    200 requested intervals at  5.000081E+01
+    40172  5.100E+01 5.100E+01  00:29:49 1.144E-03        6037  5.999E+05  3.317E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     51 of    200 requested intervals at  5.100004E+01
+    41019  5.200E+01 5.200E+01  00:30:25 1.196E-03        7136  5.997E+05  3.370E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     52 of    200 requested intervals at  5.200064E+01
+    41856  5.300E+01 5.300E+01  00:31:00 1.195E-03        7136  5.998E+05  3.422E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     53 of    200 requested intervals at  5.300111E+01
+    42661  5.400E+01 5.400E+01  00:31:34 1.253E-03         430  6.000E+05  3.475E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     54 of    200 requested intervals at  5.400058E+01
+    43463  5.500E+01 5.500E+01  00:32:08 1.252E-03         430  5.999E+05  3.527E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     55 of    200 requested intervals at  5.500059E+01
+    44274  5.600E+01 5.600E+01  00:32:42 1.200E-03        5765  5.997E+05  3.580E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     56 of    200 requested intervals at  5.600017E+01
+    45109  5.700E+01 5.700E+01  00:33:18 1.199E-03        5765  5.995E+05  3.632E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     57 of    200 requested intervals at  5.700008E+01
+    45944  5.800E+01 5.800E+01  00:33:53 1.199E-03        5765  5.996E+05  3.685E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     58 of    200 requested intervals at  5.800020E+01
+    46779  5.900E+01 5.900E+01  00:34:28 1.199E-03        5765  5.996E+05  3.737E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     59 of    200 requested intervals at  5.900092E+01
+    47616  6.000E+01 6.000E+01  00:35:03 1.167E-03        7898  5.997E+05  3.789E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     60 of    200 requested intervals at  6.000108E+01
+    48451  6.100E+01 6.100E+01  00:35:39 1.180E-03        7778  5.993E+05  3.841E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     61 of    200 requested intervals at  6.100024E+01
+    49287  6.200E+01 6.200E+01  00:36:14 1.198E-03        5765  5.994E+05  3.892E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     62 of    200 requested intervals at  6.200091E+01
+    50122  6.300E+01 6.300E+01  00:36:49 1.198E-03        5765  5.995E+05  3.943E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     63 of    200 requested intervals at  6.300076E+01
+    50954  6.400E+01 6.400E+01  00:37:24 1.204E-03        5765  5.998E+05  3.995E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     64 of    200 requested intervals at  6.400111E+01
+    51785  6.500E+01 6.500E+01  00:37:59 1.203E-03        5765  6.002E+05  4.045E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     65 of    200 requested intervals at  6.500086E+01
+    52617  6.600E+01 6.600E+01  00:38:34 1.203E-03        5765  6.005E+05  4.095E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     66 of    200 requested intervals at  6.600052E+01
+    53449  6.700E+01 6.700E+01  00:39:09 1.203E-03        5765  6.004E+05  4.146E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     67 of    200 requested intervals at  6.700061E+01
+    54291  6.800E+01 6.800E+01  00:39:45 1.181E-03        5765  6.001E+05  4.196E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     68 of    200 requested intervals at  6.800053E+01
+    55138  6.900E+01 6.900E+01  00:40:21 1.180E-03        5765  6.005E+05  4.245E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     69 of    200 requested intervals at  6.900001E+01
+    55986  7.000E+01 7.000E+01  00:40:57 1.180E-03        5765  6.001E+05  4.295E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     70 of    200 requested intervals at  7.000037E+01
+    56834  7.100E+01 7.100E+01  00:41:33 1.180E-03        5765  6.001E+05  4.345E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     71 of    200 requested intervals at  7.100063E+01
+    57682  7.200E+01 7.200E+01  00:42:09 1.179E-03        5765  5.999E+05  4.394E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     72 of    200 requested intervals at  7.200017E+01
+    58530  7.300E+01 7.300E+01  00:42:44 1.179E-03        5765  6.003E+05  4.442E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     73 of    200 requested intervals at  7.300024E+01
+    59379  7.400E+01 7.400E+01  00:43:20 1.179E-03        5765  6.003E+05  4.491E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     74 of    200 requested intervals at  7.400026E+01
+    60228  7.500E+01 7.500E+01  00:43:56 1.179E-03        5765  6.004E+05  4.539E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     75 of    200 requested intervals at  7.500104E+01
+    61076  7.600E+01 7.600E+01  00:44:31 1.178E-03        5765  6.003E+05  4.587E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     76 of    200 requested intervals at  7.600043E+01
+    61925  7.700E+01 7.700E+01  00:45:07 1.178E-03        5765  6.005E+05  4.635E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     77 of    200 requested intervals at  7.700052E+01
+    62774  7.800E+01 7.800E+01  00:45:43 1.178E-03        5765  6.004E+05  4.682E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     78 of    200 requested intervals at  7.800035E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+    63624  7.900E+01 7.900E+01  00:46:19 1.178E-03        5765  6.004E+05  4.729E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     79 of    200 requested intervals at  7.900111E+01
+    64433  8.000E+01 8.000E+01  00:46:53 1.229E-03        2781  5.999E+05  4.776E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     80 of    200 requested intervals at  8.000110E+01
+    65235  8.100E+01 8.100E+01  00:47:27 1.256E-03        3167  6.010E+05  4.822E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     81 of    200 requested intervals at  8.100109E+01
+    66036  8.200E+01 8.200E+01  00:48:00 1.256E-03        3167  6.012E+05  4.868E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     82 of    200 requested intervals at  8.200064E+01
+    66835  8.300E+01 8.300E+01  00:48:34 1.207E-03        5201  6.011E+05  4.914E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     83 of    200 requested intervals at  8.300056E+01
+    67638  8.400E+01 8.400E+01  00:49:08 1.188E-03        4508  6.012E+05  4.959E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     84 of    200 requested intervals at  8.400075E+01
+    68468  8.500E+01 8.500E+01  00:49:43 1.188E-03        7624  6.015E+05  5.004E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     85 of    200 requested intervals at  8.500101E+01
+    69293  8.600E+01 8.600E+01  00:50:18 1.167E-03        1256  6.027E+05  5.049E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     86 of    200 requested intervals at  8.600015E+01
+    70112  8.700E+01 8.700E+01  00:50:52 1.222E-03        5294  6.016E+05  5.093E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     87 of    200 requested intervals at  8.700064E+01
+    70932  8.800E+01 8.800E+01  00:51:27 1.222E-03        5294  6.021E+05  5.137E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     88 of    200 requested intervals at  8.800090E+01
+    71752  8.900E+01 8.900E+01  00:52:01 1.222E-03        5294  6.022E+05  5.180E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     89 of    200 requested intervals at  8.900053E+01
+    72561  9.000E+01 9.000E+01  00:52:36 1.171E-03        7624  6.028E+05  5.223E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     90 of    200 requested intervals at  9.000105E+01
+    73416  9.100E+01 9.100E+01  00:53:12 1.171E-03        7624  6.022E+05  5.266E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     91 of    200 requested intervals at  9.100063E+01
+    74271  9.200E+01 9.200E+01  00:53:49 1.170E-03        7624  6.020E+05  5.308E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     92 of    200 requested intervals at  9.200005E+01
+    75126  9.300E+01 9.300E+01  00:54:25 1.170E-03        7624  6.020E+05  5.350E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     93 of    200 requested intervals at  9.300041E+01
+    75985  9.400E+01 9.400E+01  00:55:02 1.135E-03        4025  6.022E+05  5.391E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     94 of    200 requested intervals at  9.400080E+01
+    76866  9.500E+01 9.500E+01  00:55:40 1.134E-03        4025  6.018E+05  5.432E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     95 of    200 requested intervals at  9.500053E+01
+    77748  9.600E+01 9.600E+01  00:56:17 1.134E-03        4025  6.018E+05  5.472E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     96 of    200 requested intervals at  9.600063E+01
+    78630  9.700E+01 9.700E+01  00:56:55 1.133E-03        4025  6.025E+05  5.512E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     97 of    200 requested intervals at  9.700030E+01
+    79513  9.800E+01 9.800E+01  00:57:33 1.133E-03        4025  6.018E+05  5.551E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     98 of    200 requested intervals at  9.800071E+01
+    80396  9.900E+01 9.900E+01  00:58:11 1.132E-03        4025  6.024E+05  5.590E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number     99 of    200 requested intervals at  9.900063E+01
+    81280  1.000E+02 1.000E+02  00:58:48 1.132E-03        4025  6.016E+05  5.628E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    100 of    200 requested intervals at  1.000011E+02
+    82164  1.010E+02 1.010E+02  00:59:26 1.131E-03        4025  6.010E+05  5.665E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    101 of    200 requested intervals at  1.010011E+02
+    83048  1.020E+02 1.020E+02  01:00:04 1.130E-03        4025  6.016E+05  5.702E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    102 of    200 requested intervals at  1.020001E+02
+    83933  1.030E+02 1.030E+02  01:00:42 1.130E-03        4025  6.014E+05  5.739E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    103 of    200 requested intervals at  1.030002E+02
+    84819  1.040E+02 1.040E+02  01:01:20 1.129E-03        4025  6.013E+05  5.775E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    104 of    200 requested intervals at  1.040009E+02
+    85705  1.050E+02 1.050E+02  01:01:58 1.129E-03        4025  6.015E+05  5.810E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    105 of    200 requested intervals at  1.050007E+02
+    86591  1.060E+02 1.060E+02  01:02:35 1.128E-03        4025  6.014E+05  5.845E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    106 of    200 requested intervals at  1.060004E+02
+    87478  1.070E+02 1.070E+02  01:03:13 1.127E-03        4025  6.014E+05  5.880E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    107 of    200 requested intervals at  1.070002E+02
+    88366  1.080E+02 1.080E+02  01:03:51 1.127E-03        4025  6.015E+05  5.915E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    108 of    200 requested intervals at  1.080011E+02
+    89253  1.090E+02 1.090E+02  01:04:30 1.126E-03        4025  6.014E+05  5.949E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    109 of    200 requested intervals at  1.090004E+02
+    90151  1.100E+02 1.100E+02  01:05:08 1.110E-03        7624  6.012E+05  5.982E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    110 of    200 requested intervals at  1.100000E+02
+    91052  1.110E+02 1.110E+02  01:05:47 1.110E-03        7624  6.010E+05  6.015E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    111 of    200 requested intervals at  1.110002E+02
+    91953  1.120E+02 1.120E+02  01:06:25 1.110E-03        7624  6.007E+05  6.048E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    112 of    200 requested intervals at  1.120000E+02
+    92849  1.130E+02 1.130E+02  01:07:03 1.124E-03        4025  6.007E+05  6.081E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    113 of    200 requested intervals at  1.130001E+02
+    93739  1.140E+02 1.140E+02  01:07:41 1.124E-03        4025  6.006E+05  6.113E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    114 of    200 requested intervals at  1.140003E+02
+    94630  1.150E+02 1.150E+02  01:08:19 1.123E-03        4025  5.997E+05  6.145E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    115 of    200 requested intervals at  1.150011E+02
+    95521  1.160E+02 1.160E+02  01:08:57 1.123E-03        4025  5.998E+05  6.177E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    116 of    200 requested intervals at  1.160010E+02
+    96412  1.170E+02 1.170E+02  01:09:35 1.122E-03        4025  5.996E+05  6.208E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    117 of    200 requested intervals at  1.170005E+02
+    97303  1.180E+02 1.180E+02  01:10:13 1.122E-03        4025  5.999E+05  6.238E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    118 of    200 requested intervals at  1.180000E+02
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+    98196  1.190E+02 1.190E+02  01:10:51 1.121E-03        4025  6.002E+05  6.269E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    119 of    200 requested intervals at  1.190010E+02
+    99088  1.200E+02 1.200E+02  01:11:29 1.121E-03        4025  6.004E+05  6.299E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    120 of    200 requested intervals at  1.200007E+02
+    99980  1.210E+02 1.210E+02  01:12:07 1.120E-03        4025  6.003E+05  6.329E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    121 of    200 requested intervals at  1.210001E+02
+   100873  1.220E+02 1.220E+02  01:12:44 1.120E-03        4025  6.007E+05  6.358E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    122 of    200 requested intervals at  1.220001E+02
+   101767  1.230E+02 1.230E+02  01:13:23 1.119E-03        4025  6.007E+05  6.386E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    123 of    200 requested intervals at  1.230009E+02
+   102616  1.240E+02 1.240E+02  01:13:59 1.183E-03        6101  6.017E+05  6.414E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    124 of    200 requested intervals at  1.240007E+02
+   103451  1.250E+02 1.250E+02  01:14:34 1.193E-03        3187  6.021E+05  6.441E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    125 of    200 requested intervals at  1.250001E+02
+   104292  1.260E+02 1.260E+02  01:15:10 1.193E-03        3187  6.018E+05  6.468E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    126 of    200 requested intervals at  1.260006E+02
+   105137  1.270E+02 1.270E+02  01:15:46 1.176E-03        6010  6.015E+05  6.493E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    127 of    200 requested intervals at  1.270005E+02
+   105988  1.280E+02 1.280E+02  01:16:22 1.175E-03        6010  6.016E+05  6.518E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    128 of    200 requested intervals at  1.280004E+02
+   106841  1.290E+02 1.290E+02  01:16:58 1.193E-03        3187  6.021E+05  6.543E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    129 of    200 requested intervals at  1.290002E+02
+   107685  1.300E+02 1.300E+02  01:17:35 1.192E-03        3187  6.022E+05  6.567E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    130 of    200 requested intervals at  1.300004E+02
+   108525  1.310E+02 1.310E+02  01:18:10 1.209E-03        2779  6.026E+05  6.591E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    131 of    200 requested intervals at  1.310001E+02
+   109355  1.320E+02 1.320E+02  01:18:46 1.207E-03        2779  6.028E+05  6.614E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    132 of    200 requested intervals at  1.320011E+02
+   110203  1.330E+02 1.330E+02  01:19:22 1.154E-03        4005  6.030E+05  6.636E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    133 of    200 requested intervals at  1.330006E+02
+   111071  1.340E+02 1.340E+02  01:19:59 1.154E-03        4005  6.033E+05  6.658E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    134 of    200 requested intervals at  1.340008E+02
+   111939  1.350E+02 1.350E+02  01:20:36 1.153E-03        4005  6.039E+05  6.680E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    135 of    200 requested intervals at  1.350006E+02
+   112806  1.360E+02 1.360E+02  01:21:13 1.153E-03        4005  6.043E+05  6.701E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    136 of    200 requested intervals at  1.360004E+02
+   113674  1.370E+02 1.370E+02  01:21:49 1.153E-03        4005  6.050E+05  6.721E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    137 of    200 requested intervals at  1.370009E+02
+   114542  1.380E+02 1.380E+02  01:22:26 1.152E-03        4005  6.054E+05  6.741E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    138 of    200 requested intervals at  1.380010E+02
+   115409  1.390E+02 1.390E+02  01:23:03 1.154E-03          16  6.059E+05  6.760E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    139 of    200 requested intervals at  1.390002E+02
+   116276  1.400E+02 1.400E+02  01:23:40 1.154E-03          16  6.067E+05  6.779E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    140 of    200 requested intervals at  1.400006E+02
+   117143  1.410E+02 1.410E+02  01:24:17 1.153E-03          16  6.068E+05  6.797E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    141 of    200 requested intervals at  1.410006E+02
+   118011  1.420E+02 1.420E+02  01:24:54 1.153E-03          16  6.073E+05  6.814E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    142 of    200 requested intervals at  1.420001E+02
+   118878  1.430E+02 1.430E+02  01:25:30 1.162E-03        7719  6.080E+05  6.831E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    143 of    200 requested intervals at  1.430010E+02
+   119739  1.440E+02 1.440E+02  01:26:07 1.162E-03        7719  6.090E+05  6.846E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    144 of    200 requested intervals at  1.440006E+02
+   120601  1.450E+02 1.450E+02  01:26:44 1.161E-03          35  6.095E+05  6.861E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    145 of    200 requested intervals at  1.450008E+02
+   121464  1.460E+02 1.460E+02  01:27:20 1.161E-03        7719  6.101E+05  6.876E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    146 of    200 requested intervals at  1.460008E+02
+   122333  1.470E+02 1.470E+02  01:27:57 1.150E-03        1185  6.107E+05  6.889E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    147 of    200 requested intervals at  1.470002E+02
+   123203  1.480E+02 1.480E+02  01:28:34 1.150E-03        1185  6.111E+05  6.902E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    148 of    200 requested intervals at  1.480008E+02
+   124072  1.490E+02 1.490E+02  01:29:11 1.150E-03        1185  6.118E+05  6.915E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    149 of    200 requested intervals at  1.490001E+02
+   124943  1.500E+02 1.500E+02  01:29:48 1.150E-03        1185  6.122E+05  6.926E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    150 of    200 requested intervals at  1.500006E+02
+   125814  1.510E+02 1.510E+02  01:30:25 1.150E-03        1185  6.133E+05  6.937E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    151 of    200 requested intervals at  1.510003E+02
+   126686  1.520E+02 1.520E+02  01:31:02 1.149E-03        1185  6.135E+05  6.946E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    152 of    200 requested intervals at  1.520011E+02
+   127569  1.530E+02 1.530E+02  01:31:40 1.129E-03        2407  6.166E+05  6.956E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    153 of    200 requested intervals at  1.530005E+02
+   128455  1.540E+02 1.540E+02  01:32:18 1.128E-03        2407  6.161E+05  6.964E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    154 of    200 requested intervals at  1.540003E+02
+   129342  1.550E+02 1.550E+02  01:32:55 1.128E-03        2407  6.171E+05  6.972E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    155 of    200 requested intervals at  1.550008E+02
+   130229  1.560E+02 1.560E+02  01:33:33 1.115E-03        1256  6.186E+05  6.978E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    156 of    200 requested intervals at  1.560007E+02
+   131117  1.570E+02 1.570E+02  01:34:11 1.126E-03        2407  6.207E+05  6.985E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    157 of    200 requested intervals at  1.570011E+02
+   132005  1.580E+02 1.580E+02  01:34:48 1.126E-03        2407  6.219E+05  6.990E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    158 of    200 requested intervals at  1.580007E+02
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+   132895  1.590E+02 1.590E+02  01:35:26 1.125E-03        2407  6.236E+05  6.995E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    159 of    200 requested intervals at  1.590010E+02
+   133786  1.600E+02 1.600E+02  01:36:04 1.125E-03        2407  6.255E+05  6.999E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    160 of    200 requested intervals at  1.600006E+02
+   134675  1.610E+02 1.610E+02  01:36:41 1.124E-03        2407  6.274E+05  7.002E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    161 of    200 requested intervals at  1.610000E+02
+   135565  1.620E+02 1.620E+02  01:37:19 1.124E-03        2407  6.294E+05  7.005E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    162 of    200 requested intervals at  1.620000E+02
+   136457  1.630E+02 1.630E+02  01:37:57 1.123E-03        2407  6.317E+05  7.007E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    163 of    200 requested intervals at  1.630004E+02
+   137348  1.640E+02 1.640E+02  01:38:34 1.122E-03        2407  6.339E+05  7.008E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    164 of    200 requested intervals at  1.640001E+02
+   138240  1.650E+02 1.650E+02  01:39:12 1.122E-03        2407  6.360E+05  7.009E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    165 of    200 requested intervals at  1.650009E+02
+   139132  1.660E+02 1.660E+02  01:39:50 1.119E-03        7778  6.386E+05  7.009E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    166 of    200 requested intervals at  1.660001E+02
+   140025  1.670E+02 1.670E+02  01:40:28 1.121E-03        2407  6.412E+05  7.007E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    167 of    200 requested intervals at  1.670007E+02
+   140909  1.680E+02 1.680E+02  01:41:05 1.148E-03        1185  6.441E+05  7.006E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    168 of    200 requested intervals at  1.680009E+02
+   141783  1.690E+02 1.690E+02  01:41:42 1.148E-03        1185  6.468E+05  7.003E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    169 of    200 requested intervals at  1.690010E+02
+   142655  1.700E+02 1.700E+02  01:42:20 1.148E-03        1185  6.503E+05  7.000E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    170 of    200 requested intervals at  1.700001E+02
+   143551  1.710E+02 1.710E+02  01:42:58 1.110E-03        5205  6.538E+05  6.996E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    171 of    200 requested intervals at  1.710011E+02
+   144452  1.720E+02 1.720E+02  01:43:36 1.110E-03        5205  6.581E+05  6.991E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    172 of    200 requested intervals at  1.720008E+02
+   145338  1.730E+02 1.730E+02  01:44:14 1.137E-03         197  6.624E+05  6.985E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    173 of    200 requested intervals at  1.730009E+02
+   146219  1.740E+02 1.740E+02  01:44:51 1.137E-03         197  6.676E+05  6.978E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    174 of    200 requested intervals at  1.740011E+02
+   147099  1.750E+02 1.750E+02  01:45:28 1.137E-03         197  6.730E+05  6.970E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    175 of    200 requested intervals at  1.750006E+02
+   147989  1.760E+02 1.760E+02  01:46:06 1.110E-03        6771  6.795E+05  6.962E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    176 of    200 requested intervals at  1.760005E+02
+   148872  1.770E+02 1.770E+02  01:46:43 1.136E-03         197  6.871E+05  6.952E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    177 of    200 requested intervals at  1.770006E+02
+   149755  1.780E+02 1.780E+02  01:47:21 1.136E-03         197  6.950E+05  6.942E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    178 of    200 requested intervals at  1.780005E+02
+   150643  1.790E+02 1.790E+02  01:47:59 1.124E-03        7741  7.039E+05  6.931E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    179 of    200 requested intervals at  1.790006E+02
+   151533  1.800E+02 1.800E+02  01:48:38 1.123E-03        7741  7.133E+05  6.919E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    180 of    200 requested intervals at  1.800008E+02
+   152424  1.810E+02 1.810E+02  01:49:16 1.122E-03        7741  7.235E+05  6.905E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    181 of    200 requested intervals at  1.810009E+02
+   153321  1.820E+02 1.820E+02  01:49:54 1.134E-03         197  7.342E+05  6.891E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    182 of    200 requested intervals at  1.820001E+02
+   154205  1.830E+02 1.830E+02  01:50:32 1.134E-03         197  7.455E+05  6.876E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    183 of    200 requested intervals at  1.830007E+02
+   155129  1.840E+02 1.840E+02  01:51:11 1.072E-03        3422  7.582E+05  6.859E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    184 of    200 requested intervals at  1.840007E+02
+   156062  1.850E+02 1.850E+02  01:51:50 1.071E-03        3422  7.711E+05  6.841E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    185 of    200 requested intervals at  1.850002E+02
+   156996  1.860E+02 1.860E+02  01:52:29 1.071E-03        3422  7.852E+05  6.822E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    186 of    200 requested intervals at  1.860007E+02
+   157930  1.870E+02 1.870E+02  01:53:09 1.071E-03        3422  7.994E+05  6.801E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    187 of    200 requested intervals at  1.870009E+02
+   158864  1.880E+02 1.880E+02  01:53:48 1.070E-03        3422  8.154E+05  6.780E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    188 of    200 requested intervals at  1.880008E+02
+   159800  1.890E+02 1.890E+02  01:54:28 1.070E-03        3422  8.325E+05  6.757E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    189 of    200 requested intervals at  1.890008E+02
+   160735  1.900E+02 1.900E+02  01:55:08 1.052E-03        5682  8.501E+05  6.733E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    190 of    200 requested intervals at  1.900004E+02
+   161686  1.910E+02 1.910E+02  01:55:48 1.051E-03        5682  8.687E+05  6.707E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    191 of    200 requested intervals at  1.910003E+02
+   162638  1.920E+02 1.920E+02  01:56:28 1.051E-03        5682  8.872E+05  6.679E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    192 of    200 requested intervals at  1.920002E+02
+   163590  1.930E+02 1.930E+02  01:57:08 1.051E-03        5682  9.062E+05  6.650E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    193 of    200 requested intervals at  1.930006E+02
+   164542  1.940E+02 1.940E+02  01:57:49 1.050E-03        5682  9.261E+05  6.619E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    194 of    200 requested intervals at  1.940007E+02
+   165494  1.950E+02 1.950E+02  01:58:29 1.050E-03        5682  9.459E+05  6.586E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    195 of    200 requested intervals at  1.950006E+02
+   166446  1.960E+02 1.960E+02  01:59:09 1.050E-03        5682  9.650E+05  6.552E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    196 of    200 requested intervals at  1.960003E+02
+   167399  1.970E+02 1.970E+02  01:59:50 1.050E-03        5682  9.834E+05  6.516E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    197 of    200 requested intervals at  1.970008E+02
+   168351  1.980E+02 1.980E+02  02:00:30 1.050E-03        5682  1.001E+06  6.478E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    198 of    200 requested intervals at  1.980003E+02
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+   169304  1.990E+02 1.990E+02  02:01:10 1.050E-03        5682  1.017E+06  6.439E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+ODB Field Frame Number    199 of    200 requested intervals at  1.990007E+02
+   170257  2.000E+02 2.000E+02  02:01:50 1.050E-03        5682  1.032E+06  6.398E+09
+INSTANCE WITH CRITICAL ELEMENT: PART-1-1
+Restart Number  1 at 200.00
+ODB Field Frame Number    200 of    200 requested intervals at  2.000000E+02
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+
