@@ -10,9 +10,9 @@ The repository contains Abaqus crystal plasticity VUMAT code for the following p
 3. Crack/ Baolin, Wang, et al. in preparation.
 
 # Code Structure
-The VUMAT codes are written in Fortran, other postprocessing scripts are using Python3 and MATLAB. The main crystal plasticity code is vumat_*.f, this VUMAT code requires external input file such as slip system defination and crystal orientation. Please remember to change the path of these files (variables of FILE1, FILE2 and etc.) when using this code. The sample runing script can be found in the 'run.sh'
+The VUMAT codes are written in Fortran, other postprocessing scripts are using Python3 and MATLAB. The main crystal plasticity code is vumat_*.f, this VUMAT code requires external input files such as slip system definition and crystal orientation. Please remember to change the path of these files (variables of FILE1, FILE2 and etc.) when using this code. The sample running script can be found in the 'run.sh'
 
 After the calculation, the postprocessing script could be used to get the lattice strain response, such as the commands in 'fit.sh'. The outputs will be written into 'fitting.dat', 'lattice_strain_LD.dat' and 'lattice_strain_TD.dat'.
 
 # Contact
-Contact Yin Zhang, yzhang951@gatech.edu for more technical details.
+Please contact Dr. Yin Zhang yzhang951@gatech.edu for more technical details.
