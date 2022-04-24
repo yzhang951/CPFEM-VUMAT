@@ -1,3 +1,0 @@
-#!/bin/bash
-date
-/opt/Commands/abq6131 input=J_8000 job=J_8000 user=vumat_dual_phase.f double
