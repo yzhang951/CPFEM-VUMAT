@@ -28,7 +28,6 @@ FILE 1~5 in line		: path of aeuler file, slipsys file and other output
 ## aeuler file
 The euler angles information start in line 5. 
 Column 1-3				: euler angles in degree
-Column 4-6				: eigenstrain to simulate type-II internal stress
 
 
 ## J_8000.inp
