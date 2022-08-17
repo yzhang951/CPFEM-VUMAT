@@ -5,7 +5,7 @@ Crystal plasticity finite element code, VUMAT files for Abaqus
 The repository contains Abaqus crystal plasticity VUMAT code for the following papers, 
 1. AM-316steel-NC/		Chen, Wen, et al. ["Microscale residual stresses in additively manufactured stainless steel."](https://www.nature.com/articles/s41467-019-12265-8) Nature communications 10.1 (2019): 1-12.
 
-2. AM-HEA/ Ren, Jie, et al. "Strong yet ductile nanolamellar high-entropy alloys by additive manufacturing." in press.
+2. AM-HEA/ Ren, Jie, et al. ["Strong yet ductile nanolamellar high-entropy alloys by additive manufacturing."] Nature 608.7921 (2022): 62-68.
 
 3. Crack/ Baolin, Wang, et al. in preparation.
 
