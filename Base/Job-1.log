@@ -1,0 +1,69 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB Job-1
+Abaqus 2022
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens from Flexnet server localhost.
+<9994 out of 9999 licenses remain available>.
+Begin Compiling Double Precision Abaqus/Explicit User Subroutines
+Tue Sep 24 20:45:55 2024
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.10.0 Build 20230609_000000
+Copyright (C) 1985-2023 Intel Corporation.  All rights reserved.
+
+ifort: command line warning #10434: option '-extend_source' use with underscore is deprecated; use '-extend-source' instead
+ Intel(R) Fortran 2021.10.0-1769.02
+vumat.for(86): remark #15009: vumat_ has been targeted for automatic cpu dispatch
+vumat.for(1401): remark #15009: transpose_ has been targeted for automatic cpu dispatch
+vumat.for(1607): remark #15009: inverse_3x3_ has been targeted for automatic cpu dispatch
+vumat.for(811): remark #15009: calc_sig_ has been targeted for automatic cpu dispatch
+vumat.for(763): remark #15009: calc_e_el_ has been targeted for automatic cpu dispatch
+vumat.for(1706): remark #15009: lu_decomp_ has been targeted for automatic cpu dispatch
+End Compiling Double Precision Abaqus/Explicit User Subroutines
+Begin Linking Double Precision Abaqus/Explicit User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.10.0 Build 20230609_000000
+Copyright (C) 1985-2023 Intel Corporation.  All rights reserved.
+
+GNU ld (GNU Binutils for Ubuntu) 2.38
+ld: /usr/SIMULIA/EstProducts/2022/linux_a64/code/lib/libexplicitU-D_static.a(vusuperelasplastmod.o): warning: relocation in read-only section `.trace'
+ld: warning: creating DT_TEXTREL in a shared object
+End Linking Double Precision Abaqus/Explicit User Subroutines
+Tue Sep 24 20:46:00 2024
+Begin Compiling Single Precision Abaqus/Package User Subroutines
+Tue Sep 24 20:46:00 2024
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.10.0 Build 20230609_000000
+Copyright (C) 1985-2023 Intel Corporation.  All rights reserved.
+
+ifort: command line warning #10434: option '-extend_source' use with underscore is deprecated; use '-extend-source' instead
+ Intel(R) Fortran 2021.10.0-1769.02
+vumat.for(86): remark #15009: vumat_ has been targeted for automatic cpu dispatch
+vumat.for(1401): remark #15009: transpose_ has been targeted for automatic cpu dispatch
+vumat.for(1607): remark #15009: inverse_3x3_ has been targeted for automatic cpu dispatch
+vumat.for(811): remark #15009: calc_sig_ has been targeted for automatic cpu dispatch
+vumat.for(763): remark #15009: calc_e_el_ has been targeted for automatic cpu dispatch
+vumat.for(1706): remark #15009: lu_decomp_ has been targeted for automatic cpu dispatch
+End Compiling Single Precision Abaqus/Package User Subroutines
+Begin Linking Single Precision Abaqus/Package User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.10.0 Build 20230609_000000
+Copyright (C) 1985-2023 Intel Corporation.  All rights reserved.
+
+GNU ld (GNU Binutils for Ubuntu) 2.38
+ld: /usr/SIMULIA/EstProducts/2022/linux_a64/code/lib/libexplicitU_static.a(vusuperelasplastmod.o): warning: relocation in read-only section `.trace'
+ld: warning: creating DT_TEXTREL in a shared object
+End Linking Single Precision Abaqus/Package User Subroutines
+Tue Sep 24 20:46:05 2024
+Begin Analysis Input File Processor
+Tue Sep 24 20:46:05 2024
+Run pre
+Tue Sep 24 20:46:05 2024
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+Tue Sep 24 20:46:05 2024
+Run package
+Tue Sep 24 20:46:06 2024
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+Tue Sep 24 20:46:06 2024
+Run explicit_dp
+ Read in Euler Angles
+Tue Sep 24 20:46:33 2024
+End Abaqus/Explicit Analysis
+Abaqus JOB Job-1 COMPLETED
