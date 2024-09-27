@@ -394,7 +394,7 @@ C         write(*,*) "Rotate Elastic tensor and slip system!"
 c====================================================================       
 c        Calculate the plastic Velocity Gradient, Green Strain, 
 C        SPK2 stress and Cauchy Stress
-c        (1.1) - (1.8)
+c        See 'Equation.pdf'
 c====================================================================
 C         write(*,*) "Calculate the L_p, E_el, Spk2, Sig"
          call calc_L_p(num_slip_sys, gamma_dot_0, xs0, xm0, xL_p)
