@@ -1,12 +1,12 @@
 c===================================================================
 c                                                                  c
-c VUMAT: Rate-dependent crystal plasticity with back stresses     c
-c Basic crystal plasticity model for beginners                    c
-c Developed by: Yin Zhang, Peking University                      c
-c Contact: yinzhang@pku.edu.cn                                    c 
-c Homepage: https://yzhang951.github.io/                          c
-c Runs on Abaqus/Explicit (working on 6.13 and 2022)              c
-c Latest version: 09/24/2024                                      c
+c VUMAT: Rate-dependent crystal plasticity with back stresses      c
+c Basic crystal plasticity model for beginners                     c
+c Developed by: Yin Zhang, Peking University                       c
+c Contact: yinzhang@pku.edu.cn                                     c 
+c Homepage: https://yzhang951.github.io/                           c
+c Runs on Abaqus/Explicit (working on 6.13 and 2022)               c
+c Latest version: 09/24/2024                                       c
 c                                                                  c
 c-------------------------------------------------------------------
 c This VUMAT models cyclic loading in FCC crystal plasticity
@@ -71,7 +71,7 @@ c     Read in Euler angles from external file and store in STATENEW
            stateNew(k,1) = psi(i,1)
            stateNew(k,2) = psi(i,2)
            stateNew(k,3) = psi(i,3)
-           field(k,1) = 1.0
+c           field(k,1) = 1.0
          end do
        end if
 
