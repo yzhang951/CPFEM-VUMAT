@@ -362,27 +362,51 @@ c====================================================================
 c       Read in deformation gradient tensor
 c====================================================================
 C         write(*,*) "Read in deformation gradient tensor!"
+         if (nshr.eq.3) then
+C        3D problem
+           F_0(1,1) = defgradOld(km,1)
+           F_0(2,2) = defgradOld(km,2)
+           F_0(3,3) = defgradOld(km,3)
+           F_0(1,2) = defgradOld(km,4)
+           F_0(2,3) = defgradOld(km,5)
+           F_0(3,1) = defgradOld(km,6)
+           F_0(2,1) = defgradOld(km,7)
+           F_0(3,2) = defgradOld(km,8)
+           F_0(1,3) = defgradOld(km,9)
 
-         F_0(1,1) = defgradOld(km,1)
-         F_0(2,2) = defgradOld(km,2)
-         F_0(3,3) = defgradOld(km,3)
-         F_0(1,2) = defgradOld(km,4)
-         F_0(2,3) = defgradOld(km,5)
-         F_0(3,1) = defgradOld(km,6)
-         F_0(2,1) = defgradOld(km,7)
-         F_0(3,2) = defgradOld(km,8)
-         F_0(1,3) = defgradOld(km,9)
+
+           F_t(1,1) = defgradNew(km,1)
+           F_t(2,2) = defgradNew(km,2)
+           F_t(3,3) = defgradNew(km,3)
+           F_t(1,2) = defgradNew(km,4)
+           F_t(2,3) = defgradNew(km,5)
+           F_t(3,1) = defgradNew(km,6)
+           F_t(2,1) = defgradNew(km,7)
+           F_t(3,2) = defgradNew(km,8)
+           F_t(1,3) = defgradNew(km,9)
+         elseif (nshr.eq.1) then
+c        Plane Strain problem
+           F_0(1,1) = defgradOld(km,1)
+           F_0(2,2) = defgradOld(km,2)
+           F_0(3,3) = defgradOld(km,3)
+           F_0(1,2) = defgradOld(km,4)
+           F_0(2,3) = 0.D0
+           F_0(3,1) = 0.D0
+           F_0(2,1) = defgradOld(km,5)
+           F_0(3,2) = 0.D0
+           F_0(1,3) = 0.D0
 
 
-         F_t(1,1) = defgradNew(km,1)
-         F_t(2,2) = defgradNew(km,2)
-         F_t(3,3) = defgradNew(km,3)
-         F_t(1,2) = defgradNew(km,4)
-         F_t(2,3) = defgradNew(km,5)
-         F_t(3,1) = defgradNew(km,6)
-         F_t(2,1) = defgradNew(km,7)
-         F_t(3,2) = defgradNew(km,8)
-         F_t(1,3) = defgradNew(km,9)
+           F_t(1,1) = defgradNew(km,1)
+           F_t(2,2) = defgradNew(km,2)
+           F_t(3,3) = defgradNew(km,3)
+           F_t(1,2) = defgradNew(km,4)
+           F_t(2,3) = 0.D0
+           F_t(3,1) = 0.D0
+           F_t(2,1) = defgradNew(km,5)
+           F_t(3,2) = 0.D0
+           F_t(1,3) = 0.D0
+         endif
 c====================================================================       
 c       Rotate elastic tensor and slip direction and normal direction
 c====================================================================
@@ -409,15 +433,29 @@ c====================================================================
 c        Update the rotation matrix
 c====================================================================
 c         write(*,*) "Updating the rotation matrix", F_p_0, F_p_t
-         U_stretch(1,1) = stretchNew(km,1)
-         U_stretch(2,2) = stretchNew(km,2)
-         U_stretch(3,3) = stretchNew(km,3)
-         U_stretch(1,2) = stretchNew(km,4)
-         U_stretch(2,3) = stretchNew(km,5)
-         U_stretch(3,1) = stretchNew(km,6)
-         U_stretch(3,2) = U_stretch(2,3)
-         U_stretch(1,3) = U_stretch(3,1)
-         U_stretch(2,1) = U_stretch(1,2)
+         if (nshr.eq.3) then
+c        3D problem
+           U_stretch(1,1) = stretchNew(km,1)
+           U_stretch(2,2) = stretchNew(km,2)
+           U_stretch(3,3) = stretchNew(km,3)
+           U_stretch(1,2) = stretchNew(km,4)
+           U_stretch(2,3) = stretchNew(km,5)
+           U_stretch(3,1) = stretchNew(km,6)
+           U_stretch(3,2) = U_stretch(2,3)
+           U_stretch(1,3) = U_stretch(3,1)
+           U_stretch(2,1) = U_stretch(1,2)
+         elseif (nshr.eq.1) then
+c        Plane Strain problem
+           U_stretch(1,1) = stretchNew(km,1)
+           U_stretch(2,2) = stretchNew(km,2)
+           U_stretch(3,3) = stretchNew(km,3)
+           U_stretch(1,2) = stretchNew(km,4)
+           U_stretch(2,3) = 0.D0
+           U_stretch(3,1) = 0.D0
+           U_stretch(3,2) = U_stretch(2,3)
+           U_stretch(1,3) = U_stretch(3,1)
+           U_stretch(2,1) = U_stretch(1,2)
+         endif
          call inverse_3x3(U_stretch, U_stretch_inv)
          call aa_dot_bb(3, F_t, U_stretch_inv, rel_spin_t)
 
@@ -515,17 +553,17 @@ c-------------------- Store in accumlated shear34-45 -----------------
            n = n + 1
            stateNew(km,n) = stateOld(km,n)+DABS(gamma_dot_t(i))*dtime
          end do
-c-------------------- Store in Back stress 46-57 ---------------------
+c-------------------- Store in threshold stress 46-57 ----------------
          do i = 1, num_slip_sys
            n = n + 1
            stateNew(km,n) = threshold_t(i)
          end do
-c-------------------- Store in threshold stress 58-69 ----------------
+c-------------------- Store in back stress one 58-69 -----------------
          do i = 1, num_slip_sys
            n = n + 1
            stateNew(km,n) = back_stress_one_t(i)
          end do
-c-------------------- Store in threshold stress 70-81 ----------------
+c-------------------- Store in back stress two 70-81 -----------------
          do i = 1, num_slip_sys
            n = n + 1
            stateNew(km,n) = back_stress_two_t(i)
