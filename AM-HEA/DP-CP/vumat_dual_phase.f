@@ -695,15 +695,6 @@ C                   SMAT_BCC: BCC slip system
 
 46      CONTINUE 
 
-C                  Material property based on phase ID
-        IF (PHASE(INOEL).EQ.1) THEN   
-          S0 = S0_FCC
-          QL = QL_FCC
-        ELSE
-          S0 = S0_BCC
-          QL = QL_BCC
-        END IF
-
 C
 C           The calculation procedure needs the inverse of the plastic
 C           deformation gradient for all elements and all crystals. This 
@@ -728,9 +719,17 @@ C             the shear increments, and the accumulated shears
 C             for all slip systems in every crystal.
 C              
            DO 55 ISLIP = 1,NSLIP
-           S_T_ALL(INOEL,ICRYS,ISLIP)       = S0
+C            Material property based on phase ID
+             IF (PHASE(INOEL).EQ.1) THEN   
+               S0 = S0_FCC
+               QL = QL_FCC
+             ELSE
+               S0 = S0_BCC
+               QL = QL_BCC
+             END IF
+             S_T_ALL(INOEL,ICRYS,ISLIP)       = S0
              DGAMMA_T_ALL(INOEL,ICRYS,ISLIP)  = ZERO
-           ACCGAM_T_ALL(INOEL,ICRYS,ISLIP)  = ZERO
+             ACCGAM_T_ALL(INOEL,ICRYS,ISLIP)  = ZERO
 55           CONTINUE
 60      CONTINUE
 C

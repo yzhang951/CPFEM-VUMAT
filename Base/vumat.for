@@ -195,7 +195,7 @@ c-------------------- Macroscopic Properties  -----------------------
 c-------------------- Rate-dependent flow rule ----------------------       
        g0           = props(7)  ! Reference shear rate
        am           = props(8)  ! Strain rate sensitivity
-       s0           = props(9) ! Initial slip resistance
+       s0           = props(9)  ! Initial slip resistance
 c-------------------- Hardening -------------------------------------
        h0           = props(10) ! Initial hardening rate
        s_sat        = props(11) ! Saturated slip resistance
