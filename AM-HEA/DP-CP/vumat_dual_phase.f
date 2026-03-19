@@ -1461,7 +1461,7 @@ C
                 ENDIF
               ELSE
                  WRITE(*,*)'TIME STEP TOO LARGE!! STOPPING!!'
-                 STOP
+                 CALL ABORT
               END IF
 130          CONTINUE
 C 
@@ -2022,7 +2022,7 @@ C      If not, then print diagnostic and stop.
           WRITE(80,*) 'ERROR: SUBROUTINE POLAR:'
           WRITE(80,*) 'ERROR: DETF is negative/zero.....stopping!!'
           WRITE(80,*) 'DET_F = ',DET_F
-        STOP
+        CALL ABORT
         ENDIF
 
 C      Calculate the right Cauchy Green strain tensor [C]
